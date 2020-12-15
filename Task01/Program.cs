@@ -30,7 +30,6 @@ namespace Task01
         private double _r;
         public Circle()
         {
-
         }
         public Circle(double r)
         {

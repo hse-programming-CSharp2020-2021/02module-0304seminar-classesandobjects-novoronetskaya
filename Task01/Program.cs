@@ -28,14 +28,32 @@ namespace Task01
     class Circle
     {
         private double _r;
+        public Circle()
+        {
 
-        // TODO: описать конструктор без параметров.
-
-        // TODO: описать конструктор с вещественным параметром - радиусом круга.
-
-        // TODO: добавить свойство R, инкапсулирующее поле _r и недопускающее присваивание полю некорректного значения.
-
-        // TODO: добавить свойство S - площадь круга заданного радиуса.
+        }
+        public Circle(double r)
+        {
+            _r = r;
+        }
+        public double R
+        {
+            get
+            {
+                return _r;
+            }
+            set
+            {
+                _r = value;
+            }
+        }
+        public double S
+        {
+            get
+            {
+                return Math.PI * R * R;
+            }
+        }
     }
     class Program
     {
@@ -45,13 +63,28 @@ namespace Task01
         }
         static void RunTask01()
         {
-            // TODO: ввод и обработка пользовательского ввода.
-
-            double rMin =
-            double rMax = 
-            double delta = 
-
-            Circle circle = 
+            double rMin = 0;
+            double rMax = 0;
+            double delta = 0;
+            if (!GetValidData(ref rMin) || !GetValidData(ref rMax) || !GetValidData(ref delta))
+            {
+                return;
+            }
+            while (rMax - rMin > Double.Epsilon)
+            {
+                Circle circle = new Circle(rMin);
+                Console.WriteLine($"{circle.S:f2}");
+                rMin += delta;
+            }
+        }
+        static bool GetValidData(ref double input)
+        {
+            if (!double.TryParse(Console.ReadLine(), out input) || input <= 0)
+            {
+                Console.WriteLine("Incorrect input");
+                return false;
+            }
+            return true;
         }
     }
 }

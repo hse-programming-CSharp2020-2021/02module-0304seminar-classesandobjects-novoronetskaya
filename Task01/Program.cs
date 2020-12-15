@@ -76,11 +76,13 @@ namespace Task01
                 rMin += delta;
             }
         }
-        static bool GetValidData(ref double input)
+        static bool GetValidData(ref double result)
         {
-            if (!double.TryParse(Console.ReadLine(), out input) || input <= 0)
+            string input = Console.ReadLine();
+            if (!double.TryParse(input, out result) || result <= 0)
             {
                 Console.WriteLine("Incorrect input");
+                Console.WriteLine(input);
                 return false;
             }
             return true;

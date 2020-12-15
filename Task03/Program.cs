@@ -108,12 +108,22 @@ namespace Task03
             string[] data = Console.ReadLine().Split(' ');
             double im = 0;
             double re = 0;
+            if (data.Length != 2)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
             if (!GetValidData(ref re, data[0]) || !GetValidData(ref im, data[1]))
             {
                 return;
             }
             Complex a = new Complex(re, im);
             data = Console.ReadLine().Split(' ');
+            if (data.Length != 2)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
             if (!GetValidData(ref re, data[0]) || !GetValidData(ref im, data[1]))
             {
                 return;

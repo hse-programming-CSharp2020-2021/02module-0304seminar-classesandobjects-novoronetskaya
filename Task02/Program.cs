@@ -27,7 +27,14 @@ namespace Task02
 {
     class LatinChar
     {
-
+        public char _char;
+        public LatinChar() : this('a')
+        {
+        }
+        public LatinChar(char symbol)
+        {
+            _char = symbol;
+        }
     }
 
     class Program
@@ -39,11 +46,38 @@ namespace Task02
         static void RunTask02()
         {
             // TODO: ввод и обработка пользовательского ввода.
-
-            char minChar =
-            char maxChar =
-
-            LatinChar latinChar =
+            string[] chars = Console.ReadLine().Split(' ');
+            if (chars.Length != 2)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
+            char minChar = 'a';
+            char maxChar = 'a';
+            if (!GetValidData(ref minChar, chars[0]) || !GetValidData(ref maxChar, chars[1]))
+            {
+                return;
+            }
+            if (minChar > maxChar)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
+            while (minChar <= maxChar)
+            {
+                LatinChar latinChar = new LatinChar(minChar);
+                Console.WriteLine(latinChar._char);
+                minChar = (char)(minChar + 1);
+            }
+        }
+        static bool GetValidData(ref char symbol, string input)
+        {
+            if (!char.TryParse(input, out symbol))
+            {
+                Console.WriteLine("Incorrect input");
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -75,6 +75,11 @@ namespace Task01
             {
                 return;
             }
+            if (rMin >= rMax)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
             while (rMax - rMin > Double.Epsilon)
             {
                 Circle circle = new Circle(rMin);

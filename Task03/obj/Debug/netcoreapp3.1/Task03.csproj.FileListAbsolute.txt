@@ -1,0 +1,13 @@
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.exe
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.deps.json
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.runtimeconfig.json
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.runtimeconfig.dev.json
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.dll
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\bin\Debug\netcoreapp3.1\Task03.pdb
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.csprojAssemblyReference.cache
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.AssemblyInfoInputs.cache
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.AssemblyInfo.cs
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.csproj.CoreCompileInputs.cache
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.dll
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.pdb
+C:\Users\пк\02module-0304seminar-classesandobjects-novoronetskaya\Task03\obj\Debug\netcoreapp3.1\Task03.genruntimeconfig.cache

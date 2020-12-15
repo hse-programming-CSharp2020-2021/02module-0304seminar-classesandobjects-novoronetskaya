@@ -56,16 +56,22 @@ namespace Task01
     }
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             RunTask01();
         }
         static void RunTask01()
         {
+            string[] numbers = Console.ReadLine().Split(' ');
+            if (numbers.Length != 3)
+            {
+                Console.WriteLine("Incorrect input");
+                return;
+            }
             double rMin = 0;
             double rMax = 0;
             double delta = 0;
-            if (!GetValidData(ref rMin) || !GetValidData(ref rMax) || !GetValidData(ref delta))
+            if (!GetValidData(ref rMin, numbers[0]) || !GetValidData(ref rMax, numbers[1]) || !GetValidData(ref delta, numbers[2]))
             {
                 return;
             }
@@ -76,13 +82,11 @@ namespace Task01
                 rMin += delta;
             }
         }
-        static bool GetValidData(ref double result)
+        static bool GetValidData(ref double result, string input)
         {
-            string input = Console.ReadLine();
             if (!double.TryParse(input, out result) || result <= 0)
             {
                 Console.WriteLine("Incorrect input");
-                Console.WriteLine(input);
                 return false;
             }
             return true;
